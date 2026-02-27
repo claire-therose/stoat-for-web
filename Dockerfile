@@ -3,8 +3,6 @@
 # ============================================
 FROM node:24-alpine AS builder
 
-LABEL org.opencontainers.image.source=https://github.com/claire-therose/stoat-for-web
-
 RUN apk add --no-cache git python3 make g++
 
 # Install pnpm
