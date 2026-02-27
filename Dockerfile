@@ -1,5 +1,3 @@
-LABEL org.opencontainers.image.source https://github.com/claire-therose/stoat-for-web
-
 # ============================================
 # Stage 1: Build the web client
 # ============================================
@@ -11,6 +9,8 @@ RUN apk add --no-cache git python3 make g++
 RUN corepack enable && corepack prepare pnpm@10.28.1 --activate
 
 WORKDIR /build
+
+LABEL org.opencontainers.image.source https://github.com/claire-therose/stoat-for-web
 
 # Copy workspace config files for dependency resolution
 COPY package.json pnpm-workspace.yaml pnpm-lock.yaml .npmrc ./
