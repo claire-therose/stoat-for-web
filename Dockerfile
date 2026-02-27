@@ -3,14 +3,14 @@
 # ============================================
 FROM node:24-alpine AS builder
 
+LABEL org.opencontainers.image.source=https://github.com/claire-therose/stoat-for-web
+
 RUN apk add --no-cache git python3 make g++
 
 # Install pnpm
 RUN corepack enable && corepack prepare pnpm@10.28.1 --activate
 
 WORKDIR /build
-
-LABEL org.opencontainers.image.source=https://github.com/claire-therose/stoat-for-web
 
 # Copy workspace config files for dependency resolution
 COPY package.json pnpm-workspace.yaml pnpm-lock.yaml .npmrc ./
