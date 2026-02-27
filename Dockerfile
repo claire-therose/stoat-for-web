@@ -1,3 +1,5 @@
+LABEL org.opencontainers.image.source https://github.com/claire-therose/stoat-for-web
+
 # ============================================
 # Stage 1: Build the web client
 # ============================================
