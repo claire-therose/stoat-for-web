@@ -58,8 +58,8 @@ export default function FlowHome() {
               </b>
               <span style={{ "text-align": "center", opacity: "0.5" }}>
                 <Trans>
-                  Welcome to Clairefriends Chat! This is a chat app heavily
-                  based on the Stoat codebase.
+                  Stoat is one of the best ways to stay connected with your
+                  friends and community, anywhere, anytime.
                 </Trans>
               </span>
             </Column>
